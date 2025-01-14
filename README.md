@@ -2,19 +2,18 @@
 
 ## Overview
 
-The **Talkify Frontend** is the user interface of the Talkify real-time chat system. Built with **React**, it provides an interactive and seamless experience for users to communicate and manage their chats. This repository is part of the multi-repository setup for Talkify.
+The **Talkify Frontend** is the user interface of the Talkify real-time chat system. Built with **Next.js** (a React framework), it provides an interactive and seamless experience for users to communicate and manage their chats. This repository is part of the multi-repository setup for Talkify.
 
 ## Features
 
 - Responsive design for chat functionality.
 - Real-time messaging via integration with the backend.
 - User authentication and session management.
-- Dynamic chat list and message views.
+- Dynamic chat list and message views with server-side rendering (SSR) and static site generation (SSG).
 
 ## Tech Stack
 
-- **React**: Frontend library for building user interfaces.
-- **React Router**: For navigation and routing.
+- **Next.js**: React-based framework for building modern web applications with SSR and SSG capabilities.
 - **Axios**: For making API requests to the backend.
 - **CSS/SCSS**: For styling the application.
 - **WebSockets/SignalR**: For real-time updates.
@@ -42,7 +41,7 @@ npm install
 ### Start the Development Server
 
 ```bash
-npm start
+npm run dev
 ```
 
 The application will be available at `http://localhost:3000`.
@@ -54,11 +53,10 @@ talkify-frontend/
 ├── public/          # Static files
 ├── src/
 │   ├── components/  # Reusable React components
-│   ├── pages/       # Page-level components
+│   ├── pages/       # Next.js pages (mapped to routes)
 │   ├── services/    # API service layer
 │   ├── styles/      # Global styles
-│   ├── App.js       # Main application component
-│   └── index.js     # Entry point
+│   └── utils/       # Utility functions
 ├── package.json     # Project configuration and dependencies
 └── README.md        # Project documentation
 ```
@@ -86,4 +84,4 @@ This frontend communicates with the backend via REST APIs and WebSockets provide
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/tassan/talkify-frontend/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/tassan/talkify-frontend/blob/main/LICENSE)
