@@ -29,7 +29,7 @@ The **Talkify Frontend** is the user interface of the Talkify real-time chat sys
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/talkify-frontend.git
+git clone https://github.com/tassan/talkify-frontend.git
 cd talkify-frontend
 ```
 
@@ -65,7 +65,7 @@ talkify-frontend/
 
 ## API Integration
 
-This frontend communicates with the backend via REST APIs and WebSockets provided by the [Talkify Backend](https://github.com/your-username/talkify-backend).
+This frontend communicates with the backend via REST APIs and WebSockets provided by the [Talkify Backend](https://github.com/tassan/talkify-backend).
 
 ## Contributing
 
